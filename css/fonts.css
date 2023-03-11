@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "NeoSans";
+  src: url("../webfonts/NeoSans/NeoSans-Medium.woff2") format("woff2"),
+    url("../webfonts/NeoSans/NeoSans-Medium.woff") format("woff"),
+    url("../webfonts/NeoSans/NeoSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeoSans";
+  src: url("../webfonts/NeoSans/NeoSansArabic-Black.woff2") format("woff2"),
+    url("../webfonts/NeoSans/NeoSansArabic-Black.woff") format("woff"),
+    url("../webfonts/NeoSans/NeoSansArabic-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeoSans";
+  src: url("../webfonts/NeoSans/NeoSansArabic.woff2") format("woff2"),
+    url("../webfonts/NeoSans/NeoSansArabic.woff") format("woff"),
+    url("../webfonts/NeoSans/NeoSansArabic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NeoSans";
+  src: url("../webfonts/NeoSans/NeoSansArabic-Bold.woff2") format("woff2"),
+    url("../webfonts/NeoSans/NeoSansArabic-Bold.woff") format("woff"),
+    url("../webfonts/NeoSans/NeoSansArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeoSans";
+  src: url("../webfonts/NeoSans/NeoSansArabic-Light.woff2") format("woff2"),
+    url("../webfonts/NeoSans/NeoSansArabic-Light.woff") format("woff"),
+    url("../webfonts/NeoSans/NeoSansArabic-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeoSans";
+  src: url("../webfonts/NeoSans/NeoSansArabic-Medium.woff2") format("woff2"),
+    url("../webfonts/NeoSans/NeoSansArabic-Medium.woff") format("woff"),
+    url("../webfonts/NeoSans/NeoSansArabic-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeoSans";
+  src: url("../webfonts/NeoSans/NeoSansArabic-Ultra.woff2") format("woff2"),
+    url("../webfonts/NeoSans/NeoSansArabic-Ultra.woff") format("woff"),
+    url("../webfonts/NeoSans/NeoSansArabic-Ultra.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
