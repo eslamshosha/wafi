@@ -38,7 +38,7 @@
             </figure>
             <div class="navgition">
               <div class="nav-head">
-                <a href="#" class="lang-ancor"> English </a>
+                <a href="index-en.html" class="lang-ancor"> English </a>
               </div>
               <ul class="big-menu list-unstyled">
                 <li>
@@ -197,10 +197,10 @@
     </section>
     <!-- section features -->
     <!-- cta-section -->
-    <section
-      class="cta-section"
-      style="background-image: url(images/cta-bg.jpg)"
-    >
+    <section class="cta-section">
+      <figure class="cta-bg loading-img">
+        <img data-src="images/cta-bg.jpg" class="img-fluid lazy-img" />
+      </figure>
       <div class="container">
         <div class="cta-cont">
           <h3 class="cta-head wow fadeInDown" wow-data-delay="5s">
@@ -220,10 +220,10 @@
     <section class="about-section">
       <div class="about-cont">
         <div class="about-content">
+          <figure class="about-content-img">
+            <img src="images/about/sec-head.png" alt="" class="img-fluid" />
+          </figure>
           <div class="about-content-cont">
-            <figure class="about-content-img">
-              <img src="images/about/sec-head.png" alt="" class="img-fluid" />
-            </figure>
             <h3 class="about-head wow fadeInDown" wow-data-delay="5s">
               شركة وافي للطائرات المسيرة
             </h3>
@@ -262,10 +262,11 @@
               </div>
               <div class="counter-box">
                 <div class="number-cont">
-                  <span class="number-plus">+ha</span>
+                  <span class="number-plus">+</span>
                   <span class="counter-num wow fadeInRight" data-count="500000">
                     0
                   </span>
+                  <span class="number-plus">ha</span>
                 </div>
                 <span class="counter-word"> مسح الأراضي الإجمالية</span>
               </div>
@@ -340,9 +341,51 @@
     </section>
     <!-- services-section -->
     <!-- testimonials-section -->
-    <section class="testimonials-section">
-      <!-- this is slider take care -->
-      <!-- warninng -->
+    <section
+      class="testimonials-section"
+      style="background-image: url(images/testimonials/bg.jpg)"
+    >
+      <figure class="testimonials-img">
+        <img src="images/testimonials/img.png" class="img-fluid" />
+      </figure>
+      <div class="testimonials-cont">
+        <h2 class="testimonials-head">قالوا عنا عملاؤنا وشركاؤنا</h2>
+        <div class="testimonials-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <i class="las la-quote-right"></i>
+                  <p class="testimonials-pargh">
+                    هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                    الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                    العشوائية إلى النص.
+                  </p>
+                  <h2 class="testimonials-title">م. عدنان الجابري</h2>
+                  <span class="testimonials-span"
+                    >الرئيس التنفيذي لشركة تكامل</span
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonials-box">
+                  <i class="las la-quote-right"></i>
+                  <p class="testimonials-pargh">
+                    هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن
+                    الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات
+                    العشوائية إلى النص.
+                  </p>
+                  <h2 class="testimonials-title">م. عدنان الجابري</h2>
+                  <span class="testimonials-span"
+                    >الرئيس التنفيذي لشركة تكامل</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </section>
     <!-- testimonials-section -->
     <!-- clients section -->
@@ -435,33 +478,13 @@
     <!-- clients section -->
     <!-- footer section -->
     <footer>
+      <figure class="footer-bg">
+        <img src="images/footer-bg.png" alt="bg" class="img-fluid" />
+      </figure>
       <div class="container">
-        <div class="footer-contact">
-          <a href="tel:+966 0540000000" class="contact-ancor">
-            <i class="fas fa-phone"></i>
-            <div class="contact-cont">
-              <h6 class="contact-head">اتصل بناالآن</h6>
-              <span class="contact-info"> 0540000000 </span>
-            </div>
-          </a>
-          <a href="mailto:info@alsahli.com.sa" class="contact-ancor">
-            <i class="fas fa-envelope"></i>
-            <div class="contact-cont">
-              <h6 class="contact-head">او راسلنا على</h6>
-              <span class="contact-info"> info@alsahli.com.sa </span>
-            </div>
-          </a>
-          <a href="#" class="contact-ancor">
-            <i class="fas fa-fax"></i>
-            <div class="contact-cont">
-              <h6 class="contact-head">او ارسل فاكس على</h6>
-              <span class="contact-info">0540000000</span>
-            </div>
-          </a>
-        </div>
         <div class="footer-cont">
           <div class="row">
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-3 col-xs-12">
               <div class="nav-foot-cont">
                 <h2 class="nav-foot-header nav-accordion">روابط سريعة</h2>
                 <ul class="nav-foot nav-wrap list-unstyled">
@@ -469,10 +492,16 @@
                     <a href="#" class="nav-foot-link">من نحن</a>
                   </li>
                   <li class="nav-foot-li">
-                    <a href="#" class="nav-foot-link">خدماتنا</a>
+                    <a href="#" class="nav-foot-link">عملاؤنا</a>
                   </li>
                   <li class="nav-foot-li">
                     <a href="#" class="nav-foot-link">الأخبار</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">مكتبة الصور</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">مكتبة الفيديو</a>
                   </li>
                   <li class="nav-foot-li">
                     <a href="#" class="nav-foot-link">التوظيف</a>
@@ -483,19 +512,53 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-3 col-xs-12">
               <div class="nav-foot-cont">
-                <h2 class="nav-foot-header">تابعنا على</h2>
+                <h2 class="nav-foot-header nav-accordion">خدماتنا</h2>
+                <ul class="nav-foot nav-wrap list-unstyled">
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">منصة الذكاء الإصطناعي</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link"
+                      >الطائرات بدون طيار كخدمة</a
+                    >
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link"
+                      >حلول الطائرات بدون طيار</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="nav-foot-cont">
+                <h2 class="nav-foot-header">معلومات التواصل</h2>
                 <div class="nav-foot">
+                  <ul class="footer-contact">
+                    <li>
+                      <a href="#" class="footer-ancor">
+                        <i class="lab la-whatsapp"></i>
+                        <span> +966500000000 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:++966500000000" class="footer-ancor">
+                        <i class="las la-phone"></i>
+                        <span> +966500000000 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:info@wafi-drones.sa" class="footer-ancor">
+                        <i class="las la-envelope"></i>
+                        <span> info@wafi-drones.sa </span>
+                      </a>
+                    </li>
+                  </ul>
                   <div class="social">
                     <a href="#" class="social-link">
-                      <i class="lab la-whatsapp"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                      <i class="fab fa-snapchat-ghost"></i>
+                      <i class="lab la-linkedin-in"></i>
                     </a>
                     <a href="#" class="social-link">
                       <i class="lab la-instagram"></i>
@@ -503,17 +566,20 @@
                     <a href="#" class="social-link">
                       <i class="lab la-twitter"></i>
                     </a>
+                    <a href="#" class="social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-3 col-xs-12">
               <div class="news-letter">
                 <form action="" method="post">
                   <h3 class="news-header nav-foot-header">النشرة البريدية</h3>
                   <div class="nav-foot">
                     <span class="news-span">
-                      اشترك في القائمة البريدية ليصلك جديد اخبارنا
+                      اشترك في القائمة البريدية ليصلك جديد أخبارنا
                     </span>
                     <div class="newsletter-cont">
                       <input
@@ -523,7 +589,7 @@
                         placeholder="ادخل بريدك الإلكتروني"
                       />
                       <button type="submit" class="newsletter-button">
-                        <i class="fas fa-check"></i>
+                        <i class="las la-arrow-left"></i>
                       </button>
                     </div>
                   </div>
@@ -533,9 +599,7 @@
           </div>
         </div>
         <div class="copy-flex">
-          <div class="copy-right">
-            © شركة ساب لانتاج الواح العزل بالبولي يورثين 2022
-          </div>
+          <div class="copy-right">© شركة وافي للطائرات المسيرة 2023</div>
           <span class="design-text">
             صنع في
             <a href="#"
@@ -553,7 +617,7 @@
     <!--fixed-whats-->
     <!-- arrow to top -->
     <a class="arrow-top">
-      <i class="las la-arrow-up"></i>
+      <i class="las la-long-arrow-alt-up"></i>
     </a>
     <!-- arrow to top -->
     <script src="js/jquery-3.4.1.min.js"></script>

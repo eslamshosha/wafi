@@ -137,8 +137,8 @@ $(document).ready(function () {
       },
     },
   });
-   ///////// **clients-section** /////////
-   var clientsSlider = new Swiper(".clients-section .swiper-container", {
+  ///////// **clients-section** /////////
+  var clientsSlider = new Swiper(".clients-section .swiper-container", {
     loop: true,
     autoplay: true,
     preloadImages: false,
@@ -172,6 +172,16 @@ $(document).ready(function () {
       init: function (swiper) {
         lazyLoad();
       },
+    },
+  });
+  ///////// ** testimonials-section** /////////
+  var testimonials = new Swiper(".testimonials-slider .swiper-container", {
+    loop: true,
+    autoplay: true,
+    slidesPerView: 1,
+    pagination: {
+      el: ".testimonials-slider .swiper-pagination",
+      clickable: true,
     },
   });
   ////////////** footer transfer into accordion **//////////
