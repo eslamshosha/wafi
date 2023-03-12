@@ -377,7 +377,7 @@ header {
 }
 @media (max-width: 991px) {
   .main-slider {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .main {
     min-height: 250px;
@@ -572,7 +572,7 @@ html[dir="ltr"] .cta-bg {
     width: 100%;
     margin: auto;
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 0;
     position: relative;
     z-index: 2;
   }
@@ -625,6 +625,19 @@ html[dir="ltr"] .cta-bg {
   inset-inline-end: 70px;
   z-index: 2;
   pointer-events: none;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 .about-content-bg {
   position: absolute;
@@ -805,7 +818,7 @@ html[dir="ltr"] .counter-box .number-cont {
     width: 100%;
   }
   .about-content {
-    padding: 40px 20px;
+    padding: 80px 20px;
     text-align: center;
   }
   .about-head {
@@ -832,11 +845,11 @@ html[dir="ltr"] .counter-box .number-cont {
     margin-bottom: 0px;
   }
   .counter-box .number-cont {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 26px;
     justify-content: center;
   }
-  html[dir="ltr"] .counter-box .number-cont{
+  html[dir="ltr"] .counter-box .number-cont {
     justify-content: center;
   }
   .counter-box {
@@ -966,6 +979,8 @@ html[dir="ltr"] .counter-box .number-cont {
   top: 75px;
   inset-inline-start: calc((100vw - 1170px) / 2);
   z-index: 2;
+  transform: translatey(0px);
+  animation: float 5s ease-in-out infinite;
 }
 .testimonials-cont {
   width: 50%;
@@ -1066,10 +1081,19 @@ html[dir="ltr"] .testimonials-box i {
 @media (max-width: 991px) {
   .testimonials-section {
     margin-bottom: 100px;
+    background: none !important;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .testimonials-section::after{
+    display: none;
   }
   .testimonials-cont {
     width: 100%;
     padding: 50px 20px;
+    position: relative;
+    top: auto;
+    inset-inline-end: auto;
   }
   .testimonials-box {
     padding: 0;
@@ -1361,7 +1385,7 @@ a.social-link:hover {
   font-size: 24px;
   display: flex;
   align-items: center;
-  outline: none!important;
+  outline: none !important;
   justify-content: center;
   transition: all 0.3s ease-in-out;
 }
