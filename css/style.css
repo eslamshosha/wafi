@@ -1361,6 +1361,7 @@ a.social-link:hover {
   font-size: 24px;
   display: flex;
   align-items: center;
+  outline: none!important;
   justify-content: center;
   transition: all 0.3s ease-in-out;
 }
